@@ -877,7 +877,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="U$1" library="bt" package="BTLOGOM" value="BTLOGO-LOGO-MD" x="6.35" y="6.604" rot="MR0"/>
 <element name="U1" library="bt_avr" package="SOIC14N" value="ATTINY1624" x="9.652" y="8.128" smashed="yes"/>
 <element name="JP2" library="pinhead-2" package="1X03-S" value="UPDI" x="19.558" y="8.128" smashed="yes" rot="R90">
-<attribute name="VALUE" x="18.288" y="5.969" size="1.016" layer="27" font="vector" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="18.288" y="5.969" size="1.016" layer="25" font="vector" ratio="10" rot="R180"/>
 </element>
 </elements>
 <signals>
