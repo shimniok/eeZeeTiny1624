@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.005" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="12" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -150,9 +150,9 @@
 <wire x1="22.86" y1="14.986" x2="21.59" y2="16.256" width="0" layer="20"/>
 <wire x1="21.59" y1="16.256" x2="1.27" y2="16.256" width="0" layer="20"/>
 <wire x1="1.27" y1="16.256" x2="0" y2="14.986" width="0" layer="20"/>
-<text x="6.35" y="4.826" size="0.8128" layer="26" font="vector" ratio="10" rot="MR0" align="bottom-center">bot-thoughts.com</text>
+<text x="6.477" y="4.826" size="0.8128" layer="26" font="vector" ratio="10" rot="MR0" align="bottom-center">bot-thoughts.com</text>
 <text x="18.796" y="0.508" size="0.8128" layer="25" font="vector" ratio="10">R0.2</text>
-<text x="22.352" y="8.128" size="1.016" layer="25" font="vector" ratio="10" rot="SR90" align="bottom-center">eeZeeTiny1624</text>
+<text x="22.352" y="8.128" size="1.016" layer="25" font="vector" ratio="10" rot="SR90" align="bottom-center">eeZee tiny_24</text>
 <text x="11.938" y="12.954" size="0.8128" layer="26" font="vector" ratio="10" rot="SMR180" align="bottom-center">PA0</text>
 <text x="9.398" y="12.954" size="0.8128" layer="26" font="vector" ratio="10" rot="SMR180" align="bottom-center">PA1</text>
 <text x="6.858" y="12.954" size="0.8128" layer="26" font="vector" ratio="10" rot="SMR180" align="bottom-center">PA2</text>
@@ -398,7 +398,7 @@
 <text x="26.924" y="4.064" size="0.8128" layer="122" font="vector" ratio="19" rot="MR90">bot-thoughts.com</text>
 <text x="16.891" y="4.699" size="1.016" layer="121" font="vector" ratio="15" rot="R90">ATtiny841</text>
 <text x="21.082" y="4.572" size="1.27" layer="121" font="vector" ratio="12">reset</text>
-<text x="6.35" y="5.842" size="1.016" layer="26" font="vector" ratio="10" rot="MR0" align="bottom-center">cc-by-sa</text>
+<text x="6.477" y="5.842" size="1.016" layer="26" font="vector" ratio="10" rot="MR0" align="bottom-center">cc-by-sa</text>
 <text x="18.288" y="8.763" size="1.016" layer="25" font="vector" ratio="10" rot="R180">GND</text>
 <text x="18.288" y="11.176" size="1.016" layer="25" font="vector" ratio="10" rot="R180">VDD</text>
 <text x="1.778" y="13.462" size="0.8128" layer="25" font="vector" ratio="10" rot="SR180" align="bottom-center">GND</text>
@@ -681,37 +681,35 @@ D  SDA</text>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="LaenPCBOrder *">
-<description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+<designrules name="oshpark-2layer">
+<description language="en">&lt;b&gt;OSH Park Design Rules&lt;/b&gt;
 &lt;p&gt;
-Die Standard-Design-Rules sind so gewählt, dass sie für 
-die meisten Anwendungen passen. Sollte ihre Platine 
-besondere Anforderungen haben, treffen Sie die erforderlichen
-Einstellungen hier und speichern die Design Rules unter 
-einem neuen Namen ab.</description>
-<description language="en">&lt;b&gt;Laen's PCB Order Design Rules&lt;/b&gt;
+Please make sure your boards conform to these design rules.
+&lt;/p&gt;
 &lt;p&gt;
-Please make sure your boards conform to these design rules.</description>
+Note, that not all DRC settings must be set by the manufacturer. Several can be adjusted for the design, including those listed on our docs page here. 
+&lt;a href=&quot;http://docs.oshpark.com/design-tools/eagle/design-rules-files/&quot;&gt;Adjustable Settings&lt;/a&gt;
+&lt;/p&gt;</description>
 <param name="layerSetup" value="(1*16)"/>
-<param name="mtCopper" value="0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm"/>
-<param name="mtIsolate" value="1.5011mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm"/>
-<param name="mdWireWire" value="10mil"/>
-<param name="mdWirePad" value="10mil"/>
-<param name="mdWireVia" value="10mil"/>
-<param name="mdPadPad" value="10mil"/>
-<param name="mdPadVia" value="10mil"/>
-<param name="mdViaVia" value="10mil"/>
+<param name="mtCopper" value="0.035559375mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.035559375mm"/>
+<param name="mtIsolate" value="1.6mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm"/>
+<param name="mdWireWire" value="6mil"/>
+<param name="mdWirePad" value="6mil"/>
+<param name="mdWireVia" value="6mil"/>
+<param name="mdPadPad" value="6mil"/>
+<param name="mdPadVia" value="6mil"/>
+<param name="mdViaVia" value="6mil"/>
 <param name="mdSmdPad" value="0mil"/>
 <param name="mdSmdVia" value="0mil"/>
-<param name="mdSmdSmd" value="8mil"/>
+<param name="mdSmdSmd" value="0mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="10mil"/>
-<param name="mdDrill" value="10mil"/>
+<param name="mdCopperDimension" value="15mil"/>
+<param name="mdDrill" value="6mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="6mil"/>
-<param name="msDrill" value="13mil"/>
-<param name="msMicroVia" value="13mil"/>
+<param name="msDrill" value="10mil"/>
+<param name="msMicroVia" value="10mil"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
 <param name="rvPadInner" value="0.25"/>
@@ -720,32 +718,32 @@ Please make sure your boards conform to these design rules.</description>
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
 <param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="7mil"/>
+<param name="rlMinPadTop" value="5mil"/>
 <param name="rlMaxPadTop" value="20mil"/>
-<param name="rlMinPadInner" value="7mil"/>
+<param name="rlMinPadInner" value="5mil"/>
 <param name="rlMaxPadInner" value="20mil"/>
-<param name="rlMinPadBottom" value="7mil"/>
+<param name="rlMinPadBottom" value="5mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="7mil"/>
+<param name="rlMinViaOuter" value="5mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
-<param name="rlMinViaInner" value="7mil"/>
+<param name="rlMinViaInner" value="5mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
-<param name="rlMinMicroViaOuter" value="4mil"/>
+<param name="rlMinMicroViaOuter" value="5mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
-<param name="rlMinMicroViaInner" value="4mil"/>
+<param name="rlMinMicroViaInner" value="5mil"/>
 <param name="rlMaxMicroViaInner" value="20mil"/>
-<param name="psTop" value="2"/>
-<param name="psBottom" value="2"/>
+<param name="psTop" value="-1"/>
+<param name="psBottom" value="-1"/>
 <param name="psFirst" value="-1"/>
 <param name="psElongationLong" value="100"/>
 <param name="psElongationOffset" value="100"/>
 <param name="mvStopFrame" value="1"/>
 <param name="mvCreamFrame" value="0"/>
-<param name="mlMinStopFrame" value="3mil"/>
-<param name="mlMaxStopFrame" value="3mil"/>
+<param name="mlMinStopFrame" value="2.5mil"/>
+<param name="mlMaxStopFrame" value="2.5mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
-<param name="mlViaStopLimit" value="20mil"/>
+<param name="mlViaStopLimit" value="0mil"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
@@ -860,7 +858,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="C1" library="rcl" package="C0603" value="104" x="3.81" y="8.128" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="0603YC104KAT2A" x="3.81" y="8.128" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="BOM" value="EXCLUDE" x="3.81" y="8.128" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="3.81" y="9.779" size="0.8128" layer="27" font="vector" ratio="10" align="bottom-center"/>
+<attribute name="VALUE" x="3.81" y="9.906" size="0.8128" layer="27" font="vector" ratio="10" align="bottom-center"/>
 </element>
 <element name="C2" library="bt_rcl" package="1206" value="106" x="1.524" y="8.128" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="MCTT21X106M6R3CT" x="1.524" y="8.128" size="1.27" layer="27" font="vector" ratio="16" rot="R90" display="off"/>
@@ -874,7 +872,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="JP5" library="pinhead-2" package="1X07-S" value="" x="9.398" y="14.478" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="18.288" y="11.303" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="U$1" library="bt" package="BTLOGOM" value="BTLOGO-LOGO-MD" x="6.35" y="6.604" rot="MR0"/>
+<element name="U$1" library="bt" package="BTLOGOM" value="BTLOGO-LOGO-MD" x="6.477" y="6.604" rot="MR0"/>
 <element name="U1" library="bt_avr" package="SOIC14N" value="ATTINY1624" x="9.652" y="8.128" smashed="yes"/>
 <element name="JP2" library="pinhead-2" package="1X03-S" value="UPDI" x="19.558" y="8.128" smashed="yes" rot="R90">
 <attribute name="VALUE" x="18.288" y="5.969" size="1.016" layer="25" font="vector" ratio="10" rot="R180"/>
@@ -892,10 +890,12 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="JP5" pad="7"/>
 <contactref element="C2" pad="2"/>
 <contactref element="U1" pad="14"/>
-<wire x1="1.524" y1="9.528" x2="1.5376" y2="10.5782" width="0.254" layer="1"/>
-<wire x1="3.81" y1="8.978" x2="3.8236" y2="9.7164" width="0.254" layer="1"/>
-<via x="3.8236" y="9.7164" extent="1-16" drill="0.3302"/>
-<via x="1.5376" y="10.5782" extent="1-16" drill="0.3302"/>
+<wire x1="1.524" y1="9.528" x2="1.5376" y2="8.5462" width="0.254" layer="1"/>
+<wire x1="3.81" y1="8.978" x2="3.683" y2="8.763" width="0.254" layer="1"/>
+<wire x1="3.683" y1="8.763" x2="3.3664" y2="8.8274" width="0.254" layer="1"/>
+<wire x1="3.3664" y1="8.8274" x2="3.0616" y2="8.8274" width="0.254" layer="1"/>
+<via x="3.0616" y="8.8274" extent="1-16" drill="0.3302"/>
+<via x="1.5376" y="8.5462" extent="1-16" drill="0.3302"/>
 <wire x1="5.842" y1="9.604" x2="5.842" y2="11.128" width="0.254" layer="1"/>
 <via x="5.842" y="9.604" extent="1-16" drill="0.3302"/>
 <wire x1="5.842" y1="11.128" x2="5.842" y2="11.176" width="0.254" layer="1"/>
@@ -908,10 +908,11 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="1.778" y1="4.318" x2="1.524" y2="4.572" width="0.4064" layer="1"/>
 <wire x1="5.168" y1="7.278" x2="5.842" y2="6.604" width="0.4064" layer="1"/>
 <wire x1="6.516" y1="7.278" x2="5.842" y2="6.604" width="0.4064" layer="1"/>
-<wire x1="6.516" y1="7.278" x2="12.358" y2="7.278" width="0.4064" layer="1"/>
-<wire x1="12.358" y1="7.278" x2="14.224" y2="9.144" width="0.4064" layer="16"/>
-<wire x1="14.224" y1="9.144" x2="15.748" y2="10.668" width="0.4064" layer="1"/>
-<wire x1="15.748" y1="10.668" x2="19.558" y2="10.668" width="0.4064" layer="1"/>
+<wire x1="6.516" y1="7.278" x2="12.104" y2="7.278" width="0.4064" layer="1"/>
+<wire x1="12.104" y1="7.278" x2="13.628" y2="7.278" width="0.4064" layer="16"/>
+<wire x1="13.628" y1="7.278" x2="16.002" y2="9.652" width="0.4064" layer="16"/>
+<wire x1="16.002" y1="9.652" x2="17.018" y2="10.668" width="0.4064" layer="1"/>
+<wire x1="17.018" y1="10.668" x2="19.558" y2="10.668" width="0.4064" layer="1"/>
 <contactref element="C1" pad="1"/>
 <contactref element="U1" pad="1"/>
 <contactref element="C2" pad="1"/>
@@ -920,8 +921,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="1.524" y1="4.572" x2="1.524" y2="6.728" width="0.4064" layer="1"/>
 <wire x1="1.524" y1="6.728" x2="3.26" y2="6.728" width="0.4064" layer="1"/>
 <wire x1="3.26" y1="6.728" x2="3.81" y2="7.278" width="0.4064" layer="1"/>
-<via x="12.358" y="7.278" extent="1-16" drill="0.3302"/>
-<via x="14.224" y="9.144" extent="1-16" drill="0.3302"/>
+<via x="12.104" y="7.278" extent="1-16" drill="0.3302"/>
+<via x="16.002" y="9.652" extent="1-16" drill="0.3302"/>
 </signal>
 <signal name="N$1">
 <contactref element="JP4" pad="2"/>
